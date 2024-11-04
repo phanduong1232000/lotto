@@ -40,7 +40,7 @@
                 <a href="#" data-bs-toggle="modal" data-bs-target="#withdraw" class="click-link">Withdraw</a>
             </li>
             <li class="nav-item">
-                <a href="#" class="click-link notActive">Tranfer</a>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#tranfer" class="click-link notActive">Tranfer</a>
             </li>
         </ul>
 
@@ -246,6 +246,45 @@
             </div>
         </div>
     </div>
+
+           <!-- Modal Tranfer========================== -->
+           <div class="modal fade" id="tranfer" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content animate-bottom">
+                    <div class="modal-body popup-deposit">
+                        <div class="deposit-title">TRANFER</div>
+                        <div class="item-title">Choose token</div>
+                        <select class="form-select selectAmount" aria-label="Default select example">
+                            <option selected>USDT</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                        <div class="item-title">Choose network</div>
+                        <select class="form-select selectAmount" aria-label="Default select example">
+                            <option selected>TRX - Tron (TRC20)</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+    
+                        <div class="item">
+                            <div class="left">
+                                <div class="d-flex align-items-center">
+                                    <img src="./img/QRcode.png" alt="">
+                                    <div class="ps-3">
+                                        <div class="miniNot">Address</div>
+                                        <div class="address">0xdabcnxmdb81</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="right"><img src="./img/copy-outline-black.png" alt=""></a>
+                        </div>
+                        <button class="stakingNow mt-3">TRANFER</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

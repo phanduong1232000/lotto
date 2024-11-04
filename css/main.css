@@ -1277,9 +1277,11 @@ p {
 .main.xstruyenthong .form-lg button {
     padding: 10px;
 }
-.main.xstruyenthong .text_choose_center .bet_state{
+
+.main.xstruyenthong .text_choose_center .bet_state {
     font-size: 16px;
 }
+
 .state_choose .choose_xs {
     flex: initial;
     margin: .05rem;
@@ -1311,6 +1313,72 @@ p {
     background: transparent;
 }
 
+/* ============================== LỊCH SỬ NẠP TIỀN=========== */
+.content-history {
+    color: #b7b7b7;
+    font-size: 14px;
+    position: relative;
+    margin: 1.5rem 0px 0px;
+}
+
+.content-history .item_inner {
+    border-bottom: 1px solid #e5e5e5;
+    display: flex;
+    justify-content: space-between;
+    padding: .3rem;
+}
+
+.content-history .item_history {
+    text-align: left;
+}
+
+.content-history .money_history {
+    text-align: right;
+}
+
+.content-history .sanh {
+    color: #565151;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.pending {
+    background-color: #ffc200;
+}
+
+.content-history .type_state {
+    border-radius: 10px;
+    color: #fff;
+    margin-left: .15rem;
+    padding: 3px 5px;
+    font-size: 12px;
+}
+
+.content-history .id_history_sanh {
+    margin: .2rem 0 .08rem;
+}
+
+.content-history .money {
+    color: #333;
+    display: block;
+    font-size: 14px;
+    margin: .2rem 0;
+}
+
+/* ============================== ĐỔI MẬT KHẨU=========== */
+.editpass{
+    margin-top: 20px !important;
+    position: relative;
+    z-index: 10;
+}
+.editpass .form-lg input,
+.editpass .form-lg select {
+    height: 45px;
+    margin: 10px auto;
+}
+.editpass .form-lg button{
+    padding: 10px;
+}
 
 
 /* ====================================== */
