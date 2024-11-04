@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông tin cá nhân</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=MuseoModerno:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/css/swiper-bundle.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body class="home container">
+
+    <div class="header pt-2">
+        <div class="header-top">
+            <div class="logo">
+                <a href="/"><img src="./img/logo.png" alt="Logo"></a>
+            </div>
+            <div class="header-right text-white">
+                <span>Số dư: <b>0đ</b></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="main">
+
+        <div class="account">
+            <div class="account__top promotionRule__container-content__rules-item">
+                <div class="promotionRule__container-content__rules-item__splitBorder"><span></span></div>
+                <div class="promotionRule__container-content__rules-item__borderTopStyle"><span></span><span></span>
+                </div>
+                <div class="promotionRule__container-content__rules-item__titleLeft"></div>
+                <div class="promotionRule__container-content__rules-item__title">Thành Viên</div>
+                <div class="promotionRule__container-content__rules-item__titleRight"></div>
+                <div class="account__balance"><span style="margin: 0px;"><img
+                            src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/4QAiRXhpZgAATU0AKgAAAAgAAQESAAMAAAABAAEAAAAAAAD/2wBDAAIBAQIBAQICAgICAgICAwUDAwMDAwYEBAMFBwYHBwcGBwcICQsJCAgKCAcHCg0KCgsMDAwMBwkODw0MDgsMDAz/2wBDAQICAgMDAwYDAwYMCAcIDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAz/wAARCABvAGQDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD9zHa400yqBuMfBJUdcA/1rldcumu9zHa270Fdtb6vDLptxJuXzJNzYPfjA/QCuLng424+UDFe5gfibktUfSZb8Tc42aON1TTRLIw4+uKh0vSjDOCRnn0rpptOy33aI9L2uDx+VfSRxS5eU+sWMjycp03gyMPbLlY1RV3MzABVA6kmvy6/4KV/8F29Qj8QR+GfhDeXWh6FJcS2v/CQ20Eb3etyIyofsw5aKEFhhhiSXeuNgBDffv7Y2oTeFv8Agn78dNUtZGhutO8A65cRyKcNGU0+dtw9xjI9xX8xvxa/ab8PnRtSbSNLik1a1d/LuFLf6FJJYPaFeQPmEoW5ifjzAV/5aqETLJcNQqVpYirHm5Wkk9tt2uvS3z62PJwP1KnOpi66UnF2inZra7dur1Vrppau17W+qNW/4KE+Om1aPzfG3i7XNYmRZ5PtetyyfZ1dFkjLyZIyQ6EqDwd6glkIr6C/ZC/4LVfEbwLrUFrqmvw+KrFnRTpeqTNdeepG791Ow3odhBXazLyCUbgH8gvgr8b9nw8Wa9uo7OHSrrBItvtk83QgQwFhHJKU+QNNlI13NjKxmPf+Dvx48F6nNdR3mk+KJL4pGRcTXn2q4vnDyNJcuAqqjnzGfJLABIoyJdzzD9HyvC4fMW8NiKakvRfhtb5a+Z61LijD4iUKGIpxlCS2aX4WV0+zVvI/q88E/EHw/wDtJfBjSPGnhvcdN1RWYxyKomtZQdrwyAcBlYY44III4INN0nSfss2Pl6+lfKP/AAQL+Lf/AAsb9nPxZobJFbpo6WF3BahvMkhSUTopkfoZGjiiJGTjPUndj7KWzEcx+WvzvMcLLLsXXy+X2JaejSa/BnHXgsJXq4OPwppq/aSUl9ydizZM0S/w9MfdFatrfXE1qyom4DqRHnFZsSnH65roPCd3HAkqP8uSDXzuJatex4OM5VHmUbmePBd5qCLMt5DEJFzt8snFFaX/AAkaWH7nO5YyQpHpniiuX21focftsX9m1vRGDbsyxbdxx04706W3Ug1JbW5ZR9OtSNbM3GM13uSuek5JMoiy3tUq2KgDvU627Buhq/bWW6MetEqttSamI5dTxD/gpj4qtfAX/BLr9oa+vC6xyfD/AFuyjCjcWlnsZoYxj03SKSewBPavj7/gmP8A8Ehvhn4u/wCCSXw6PxE+CHhHWfF/jawl8R6hrE9iv9uJ9ovHubKWK8TFxbsLX7KSkbqPvB1JaQN94fts/ABf2mv2MviN4Baz0++PijRp7LbdRGTyg6lXkiA5FwiF2ibosojJyARX88kP/BHv9qH9v/W9M+LeneINLsdcuLC00o31hcNYzRyaZBHp2yUx8faENptcJK8auGEe2MIo8DOcywdDBSeMxKoR573btd20X59explMcTXlUhh0nytSd2l5LeUervv0R+g3gz/giP8As9/Cz4jT3kPwat/El/cXiXI/t15bm0gZDkAW6hIPLJGWRkKsOCCOK+yfhh+yv4P+MeneOLG9+HfgjSZfE2nS2txqCeG7WKWeciMRlj5YMir5SNsbKsIwGBHFfirp3wx/ae+F37M3xG8Rat4t0vXNO+GviK58FatqVxDcXl0LmDT5Ly5kNwJUZEt9qRSyTRyeW0gJL7JQmz8Cv+CVH7XnwJ+N+mfFrVtbjk1nwjML+S/1u7ivbWGOJSx3/atzeUqA5OPlAyGBAI9bJ8thWnGpiMyhC6Tg5Sl7zspJa2tur727M+ml/tMHSwFJRltJ+5FRd7Xvze9qnqvXW9j9EP8Ag20+FcngT9lHx1qV4J49U1LVINOuUlUqy/ZDOpJB5DGWSbOewFffEtrtl6V49/wTb8La1afs63virxRpK6P4m8b6iby9jSB7USiNVjVjbtLKYmUq0XMshZYYz5jjaa9vez3yZr2s8zKWNzOvi57yl+SS0fbTTyPn80xkK2Pq1ae10t7/AAxUdH1Wmj7FNYsCnNC0Qz0q8tuMcfpRNDuTpXke01PP9trYxbjPmc+lFXJ7b9594fjRWvtEbKqaFtBkqoFW1sh7n8KWzjyBjvWtDaKE+b0rz6lazPJrVuUyfsC5+61WrGz3zqvTceavG1Vu1c78WvGDfDT4U+KPEUaq0mg6Pd6igI4ZoYXkUfiVFYqo5aIyjVdR8sd2flz+3X/wcPfEz9n7UHh8B/CXwolhC7oupa9qVzex3OD8vywLCkbEc7PMdvXFeN/A3SvBf7R/7F2m/tG698dPG/wB8P3tsNN8ead4O8U3HhzTX1S1YWUcTRx+bJIzxQwiLy1e4aEpEWZYwF8Z/aK8TRacbkI8hWNCkn8YkQKAwKnhgQOcivNPB8Pin/gnx8ebNbnwX4Z8UaP4qubPVr3wamqNLp/iFYj5kbLawtKLZ2Sd4/3q7ZIp5kMTo7g/ScS5NgMRRhhsNFRmnfe/PZar3m1frfZW6I+wlKjl+IqQpxTptWd48/XR631v1TW9ttH9efs/f8FifhD+xb8B1+BsPwu+IfiDwB4Vl1jS5PEv9k3Ooaf4pN5d2s66lI00IkELG5unlV0kkWNLcRiYTDZ1P7A03gf4a/so+Fvil4m/aI8WeNPg54Pvv7E8PeD7zW5m06bVLVgLXSjaTiOYmIiKRILobYokSRQscYkHyH+0P+1na/tKftCWd5a+Gvhh8I/BEdm14dF1Hw5ex6kLpVYuBJbNJDM7dI5vkdsqpSMEsvj/AId8fWv7T3xR8aeIbi2s/hJ4Q0m31fVtF0SR10yTVtUfTligVbfcFRpJLe2UsobaECtIxLPXrcN8ORrxUK8HG75pNpSfb3dHaT7x2+4zjLDqf7mUXzN6cq5ktZNp3aVk7Xsm7JJaI/ps/Z3/AGh/hr+078L7LVvhb4m0XxD4fs4I4FisW8uXTkAwkctuwWW3bavCSIpxg4xg117WWGr8WP8Agilqel/Bj4++Eta1jVITcag7ac4tdyQxx3MbRLvY4Lr5jRMcgKuzd82Aw/baS1+b6HGM1x8YcOwyTH/VqM3ODV02rPdprs7d7LfY8/O8uoYCrCOGm5QnFSTaSad2nHTR2tvZb7d6ItsDrUM0XljdWi1sMVVvFyh9jXy0Znjxkm9DDvFJl/Cip51xJ0orsUrI9FVNDY0eIoy5rYUZFZ9kNvNcB8VP2gbfwjrx02zkjkkteLo9fnIz5YPsOp9TjqCK4oYepiJ8tNeZwUMvr42v7Ggru33Lv/XU9C8R6/H4d0x7qSG6nVCAEt4XmdienCgnHqccfXAr49/bb/bFk8W/AHxJodno82h6fqduIpdYu7yOOPyhKNwSN9ryLJsaP5Azct8vHHocHxvuvilpmq6DfGTy7VWvbyKzby59QtWOEt1b/lmpfKvIcAIRyCcn4d/aX+LNx4l8eLq2r2ujw2un38QFrqFsxsbSNZVRjNEATsSMY8vaQqrtKsTI0nk1Myhh6zopXlHX/LT/ADPs8i4bhRqy+tRTnBprV2XVaK17763VraO75fIJP+CcVv8AETw5a3njD4g3HhnUtcRvseg2OjQ3F/eIc7RGtzdQSmR1+bZ5GQDz7edf8FAf+CYF98JPg7H8YfB2o6pr1npXm6j4l0ubSJbbVreOYAvebfOlEmzgTABDGo3ksiMyfWHwG/a18P698UI7PV/idpup2OGZ4bfTV0W1tpuHQurK0sgxkA+aFOcshHK/YGnm2vLOG6tbiG4gmQSRTROJI5V7MrDIYH1GRXLHiTGPERrVHe19LWVno193V3tuetjsvpxhOL3k0772cXdedr7pWb2Z/Lb4l+NGtahpN5DHcW+j6TeAi4ggdfOuk9JpR2PdEwOSCXFaXwn8D+JNYljudP0OdYYyGEs5WzRh6hnwWHuoavr3/gsR/wAE0/FH7E/xKk+Knwv0qx1b4WX0plu7L+yIbibwhOxyUkkCeb9jdj+6m3jyz+6cj9083zF4B/a20y7lig16xk0WaRgn2iF/Og3H+8OHXPtu+or+jOEcdh6mGjWwCVnv3v5+f4dtD8vxUq6xMo45vmX3W8ulv63Psv4E+BZNG+Edv40uNevk1az1uHT5bOytpBbwhomlUrdsCiSDyzhWUschtoCnd+tf7O//AAUm8QfEG+gstd8MiWWONPPeK1kgnOQBvbkj3yifN/dQdPw18MomvGWOHUrpLW8AY+TP5lvIGQDd5ZJTJXHzLhuBzgYr7U/Yx+I2k+GPCn9k6tpOoSXtth7DUtIKzF2/55zW7lSwP9+PBU5JMgwg9nP8soZhh+bF+/KLfLpZxTttZq9rX6t9FofoGV1MHjaMaGKpXsrJ63V7aqzXa739Oh+03h3xZY+KrET2rSLnhkkTa6H0PY/gSKsXMGPxr57+Df7Rmk6zp8dn4fh1S4u1TJtZ7YPPHgDORGSeMjggEZGa9o8BfEePxulxbzWs2n6lZBWltpkKMyNkCRQwB25GCD0OOeQa/Cswyurhpt2dl338rny+ZZPWwknNJ8vna6XS/wDnsXJ7T5/woqxcMBJ/9aiuHnZ5/MzI+KPxN034TeA7zVtQ1PSdMZYytq2oXKQxyS9gNzLvI+9tBy2MDBNfLngH4W3n7SNlf3nhPxn4U1a5hBmnH9qrdSea5JPnmFSYXJySCrHmq/8AwVQ8BzeOPGvwnt/Omt7HV5LzT7qVWC/ZY08qeRlJ+XcYVlIzxmJc5zX50/tN/BuH4KfHfS7fwzr/AIiXxJJEtzos+l3ElvrfPytDBJDIjG6yMiENGZRJDsy8hjT6SlgoUcsWIo1rVKl21y3SSbVr762vex99leGp4HK44uhX5atZNv3E1FRnKCT168rd9Ldnofa9lZeMP2av2l/B1j40sdS07TfF2qReHnmeRZba5W4LRxtHOu5SFkZXaJiGwoLKqg5pf8FDf2d7jRfF/i6+jtVTSby6aZdv3T5sayvkDoN0jr74NfAeu/8ABY74u+I/g/qXgnxR4utfHnhu7NvdWd9qFmlrr+kSW00c8Eq3EaiO4VXiVm3K8jLkeYM5P3p+3d/wUMsfFHwy8J65a2/2HTfHnhu11CG53/JcP5aSyKnHO1pxGck/cFfhfEEMUqzlTjao5xt15o2fNa21t9UvyPUyzHVamLo4mqovScJ2bUbJqUZa7SfvK2u3bRfif8aLrVPhl+0Fp9/oesWmk6k17BZG7u7gW9mUkuGG66fosS7iWdvuBd3G2vub4Df8FRNU/Z08b614B8bfZNF8T+EL+Ww1rSzdJNbh4iRIQUyrKNpPnRcYAJPJWvgz9q/xLaeLviJb3UKIq312gKgYAOWAP5nP1rwjxb4UhttTNyYdtxu3iRiWYEdME8jGB0xiv07L8hWMoQdbTTXv06/fpY+Tx2fVMNjansbShfZ7Pf8Aq5+lf7c3/BYzxt+1bDqnhb4Xx6r4P+HixNFf3URKapr6H5W86VRm3tm3BfKXDOrfvWIcwr498C/C3jj9obSPF3w3+FPhOHX9R1jTgNS8QtpNtFrMeni2aGS0N1cMq21tM5kCxl0eQKi8mMmvP/2cf2z7z4O/s7at8OdNj0nxBdfFDyoL2O6tzG2j3EN0RbhZMjcWTDsyg5EvlqC6nP6pf8EuPiv8O/AHw00/wl4ej+yXd2/n6nfzKqz6peEAGacjpn7qKPljQBF4GT9PTzX+xsNOhQw2ia5W3dS2fNK1m3e6SvbrtZGWGyeOaSWI9td2vJLRq/2Unfz7/ez84/Auj3HwxtG8P6hZXVjf6OfstxBcxNFcQSp8rJIjAFGB4KkAivUvAPxUbQr+HbJwCD1r9Dv28v8Agn5o37V2mHW9JktdD8dW8Qjh1IqRDfqowsV0FBLKBwJAC6DH31Hln8pfi/4X8U/sw+MLzRfGmi3mi6rYxtcIkwzHdxr/AMtYZBlJYyRjchIzwcMCB+o8J8SYXN4cnw1OsX+a7r8uonh62XTUn8HR/o+zPrv4Gft0+N9OttWtfDevS6DbLqMq3RsZNtzfOnyIzS/fVEjCqqIwXO9iCWJH1H8E/wBvH4ieDprPVJtf1DxBZuQLiy1S5e4iuF6Fdz7mjPoyEYOMhhlT+RP7PPin+wnjur68uFmupjMywgs3PP69fxr73/Z38aWfjrQm0+PzI7iQEKJFx5gPP5jqB6gV+gYzhvLZ0Je1oRknu+VX+/f5306H7BwLUyzM6c6OOowmpLW8Vf1T3Tts07rofsX4G8Z2vxP8D6P4i0zf9h1m0S6jViN8W770bY43IwKnHGVNFeY/8Exbua8/ZP09brcscGo3iW4b+4ZSxx/20aT8c0V/K2bUVg8bWwkdVCUor0TaR+E8RUY5dmuJwENVSqTin3UZNL8Ec3/wU98dWPw/+A2hXP2O3vtej12K40mOWJ5QjRxuZZCiMpYBSBtyVLPGGVlyp/IP46fHLR/il4l8G3XihPEGheHYdVhhuriEpeC4t5JFkvLiEQwwu1ykTQYH7x2TyzkYXzP0e/4LD/GKfQdf8L+HNJt9Nh16y0O8vY9YuLlxJoyXmYHmSJJVBKQwSsWljljCtuK4Vgfwz/bA/a31jxl42mbxF4i1nVNUtQs0VzcxQ6dBLIRuhnd7eJGdxEyqTLscNuImAO2voMHg+TARqSj8V3e/qtFtbTrZ3vp1PSxTeFyyk7Wcry1fdtKyu/dsluk23LTZnN/tXfHu1+I3xG1zxBf6hpjarr00uo6hJZRuiSXs7NNcPtZQVBmkcoOgj2DqGr7A+K3xT1D9p/8A4Ip/AnxRp9rDBB8F9nhe7aPPypcb4TubPMjGytJCMYxcL3Ulvzi1LQNY+LNrf32m6J58dwXLTxyx28DnusZkcGQ8j5gW92JNfpL/AMG+3hCP9oL9iD9qL9nvxV52m2d1ptn4y08XEJSaxvLVtskhBwdpa1scY4wH65r4biKiqVOlioy5fZTi35w2lF97p39UjwMDWqzk4vtv21Sv+NvRs+DdT8P6t8Q/iB4f0nSdP1HWNXvb1fs1lY273NzcFVaQqkaAsxCoxwAeAT2rN+JFvcaXqd5ot5pt9YahYv5d1BeQtDNbOBkq0bAMp55DAEeldz40N18LP2jvD+peE9XnsdY8M65Ff6TqVuQXtp7dnkhmUHIOGRTtOQRwQQSK5D4/+IdV+J+sXeteNteuvEd000syW4j+z2UTSyGQxxwglmUuxOJHfJ9Cwr7LBSrSnTlTivZuN7t2aeltLapp/IwxMXTlUhN+9F27rTR63/TU8L8T+J7LTrho45vtj+kHzKB7t0/LNfZH7Gn7U98NQW0urtofE2lD5pd3GpQjALH1cfxevDjndt+V/wDhBlnRpriNBNJyVA+WIdkHsBgce570kcl54PudP1Sxle3urOTbFIvVWTBXj02kA54OGB4yK+o+prFUnSq9dtNv+H6meXZjVwOIVeD9V3X+fY/ez9mD9upbnT4rW+lZ1kADeaSyjtj2+o/I0f8ABUD9oHwDP+zPN4b1rSNL8S654wjZNGsrgeY2nj7r6gHUhovLGVQqQZHITlBKV/N79mD9qSw8Q6ZHcTOlrIxEV7AG/wCPZ+zrnnYcEj2BGSVyeR8VfHq8+IfjVtQuBJqGo6h5aRxmTK28YGI4V9FQccdSWY8sSfIyHhWSzJVJ3jGm76aXfRX/AD8tj9IzTiTDyy9OnZzqXXy6trvqrf8AAO+0nwTa3U8Fzo8YtbuFQDbRsAJgOMpkgBvUEgHrwQd301+yp4plh1ZLOS2kiubbDCQhkkjIweQcEdjXyV4a8SSLqMjbsR25ALA8Z9j+Fe3+EPjfJoj6bLbKs2sW5AjQsVDQZy4fH8JwQO4JYqchgf6Uy6NSvRdOOt0cvBOcLB42Dk7Ruj+gv4G+E7H4ffBnwvpenRmG2h02KYhuGaSUebIx92kdmPuxoqf4Y/EPTfjH8MvDvirQV26T4g06G9tozjdArLzEwHAZDlCB0KkUV/HWIU3Wk63xXd773vrfzufJ4ipUnVlOt8bbcr73b1v533Px3/4KxftX+Ivit8YvG1nod5PpvhO4lWzA86XFxHbIYVlKhwG3lWkCEBMModWK7q/L3x9atf61cSzX2qXVxNM09xcXl5Jc3M7sxYuzsflJJLYjCnPLM2Stfov/AMFK/hXJ4W+NnjTRreTbBpGoXFtB83WJpC8ef9rYy5981+bnxVe40TULruVVzwfTNfrGc4ChDAUfqtuXli/N6LV+b6n13GWChR9kqC/d8keXzXKrN+b6mtPrLabpMNvCzNfSRpEHZsmNVQF2+pkMmPqfQV2nwu+KHiv4NeK49W8H+Jtc8N6tJavZzXOnXj27XMTlTJDKFOJImKoTG4KkqpIyoI8ii1R/+EjmG07I5ZIwSegDvS6n8VPLvvJhEisvDNjv7e1fnUoxmnGok11T1TPz+m9Lo9q+B/7D3jr9rbx1eW/w30k6tdeFLdbnUnnvY7a0thKHSGLzJCP3zgSMqgn5YyTgYJi+LP8AwSc/aU8Pa7D/AGl8I/E0ljb7pt2mzWuq+dIccgWssh49CAflQ4BBr6m/4Iy/tbv8J/2ffGdrHY/aJr7xpJeTScbiBp+lxYORyAqMOv8AF26192D/AIKH+GbzUfs82m6nEIYvMkkRVZVGcZxnPJ7V8Fj+PMbhMfUw1OEeWLsrp39bpr8j9CwPAyxeDp4uUneeujX5M/CTxf8AscfFjwdGzal8J/ilYoo3b5/CGoJHj/e8rH61e/aG/ZSsfgp8NPDuk3mrHUviVrcbatrem2pjfTvDlsQn2O2afOJr1g1w0yxlkh/dxt+8D1+6h/4KUfD/AES5MFxeapFmMsN1m+P/AB3Nfnz/AMF4f2k/DXx10b4K6zpLTNewtrWnzO8Tp50ebF4xyP4SZMf75r6zhnjXFZhmFHDTgoRbbbXW0W0tVtftq9NbXT8fOuEXg8LOupX5bb26tLoz8r9F0XxB4I1szw5t9waJ3V1ZSjcEEZ5HfHsCOQDXtnwd0y3t9Bi1SNmkuLpTyw+aE5IZR7ggjNcjrVxvQ/KMk5+lZPgn4hXXg7xBLGuZrGaX99Dn/wAeX0YfkQMHsR+54Wq5vTf8z4uilGSX9anq/wARfiXH8NNAt1jVJNQvHItIc/ffvI2Odq5HPHUAYJVl6f8AZf1S6kvhdX1w011eP58kj/eYgcfQDoAMADAAAArxfxZpzfEHxpJrULFreEC1tlfgpGvTjtnJb/gWO1e/fsmfDrUPHHjnR9FsVjkvtUuobC1jZwokllcIi5PAyzAZPAzX73wTh6FPBSr15JaXbb2SR6uBw9d4xSXyP6GP+CLVxcS/8E+vC/8AaDL5S3+px2e7/nit9Mpx/wBtBKfxor0b4M/Dq1/Zy+D/AIX8D2NxHJD4b06K1eVVKi4m5aaXGON8rO+O27FFfw/n9SnjszxGNou0alSckvKUm1+B14rByxNeeIT0k2/vdz//2Q=="
+                            alt="Profile"><span>Baothanhthien</span></span><strong id="account__balance">0
+                        <small>đ</small></strong></div>
+            </div>
+            <div class="account__transaction">
+                <div class="account__transaction-box"><a class="account__transaction-item" href="/addmoney"><svg
+                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" focusable="false"
+                            aria-hidden="true" viewBox="0 0 24 24" data-testid="AddCardOutlinedIcon">
+                            <path fill="#fff"
+                                d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h10v-2H4v-6h18V6c0-1.11-.89-2-2-2zm0 4H4V6h16v2zm4 9v2h-3v3h-2v-3h-3v-2h3v-3h2v3h3z">
+                            </path>
+                        </svg><span>Nạp tiền</span></a>
+                    <div class="account__transaction-line"></div><a class="account__transaction-item"
+                        href="/withdraw"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv"
+                            focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+                            data-testid="PriceChangeOutlinedIcon">
+                            <path fill="#fff"
+                                d="M8 17h2v-1h1c.55 0 1-.45 1-1v-3c0-.55-.45-1-1-1H8v-1h4V8h-2V7H8v1H7c-.55 0-1 .45-1 1v3c0 .55.45 1 1 1h3v1H6v2h2v1zM20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4V6h16v12zm-6-8 2-2 2 2m0 4.25-2 2-2-2">
+                            </path>
+                        </svg><span>Rút tiền</span></a>
+                </div>
+            </div>
+            <div class="account__menu"><a class="account__menu-item" href="/historyplay"><span><svg
+                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-u2mbqi" focusable="false"
+                            aria-hidden="true" viewBox="0 0 24 24" data-testid="QueryStatsOutlinedIcon">
+                            <path fill="#f24741"
+                                d="M19.88 18.47c.44-.7.7-1.51.7-2.39 0-2.49-2.01-4.5-4.5-4.5s-4.5 2.01-4.5 4.5 2.01 4.5 4.49 4.5c.88 0 1.7-.26 2.39-.7L21.58 23 23 21.58l-3.12-3.11zm-3.8.11c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5zm-.36-8.5c-.74.02-1.45.18-2.1.45l-.55-.83-3.8 6.18-3.01-3.52-3.63 5.81L1 17l5-8 3 3.5L13 6l2.72 4.08zm2.59.5c-.64-.28-1.33-.45-2.05-.49L21.38 2 23 3.18l-4.69 7.4z">
+                            </path>
+                        </svg>Lịch sử tham gia</span><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv"
+                        focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+                        data-testid="KeyboardArrowRightOutlinedIcon">
+                        <path d="M8.59 16.59 13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"></path>
+                    </svg></a><a class="account__menu-item" href="/history"><span><svg
+                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-u2mbqi" focusable="false"
+                            aria-hidden="true" viewBox="0 0 24 24" data-testid="LocalAtmOutlinedIcon">
+                            <path fill="#f24741"
+                                d="M11 17h2v-1h1c.55 0 1-.45 1-1v-3c0-.55-.45-1-1-1h-3v-1h4V8h-2V7h-2v1h-1c-.55 0-1 .45-1 1v3c0 .55.45 1 1 1h3v1H9v2h2v1zm9-13H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4V6h16v12z">
+                            </path>
+                        </svg>Biến động số dư</span><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv"
+                        focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+                        data-testid="KeyboardArrowRightOutlinedIcon">
+                        <path d="M8.59 16.59 13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"></path>
+                    </svg></a><a class="account__menu-item" href="/historyadd"><span><svg
+                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-u2mbqi" focusable="false"
+                            aria-hidden="true" viewBox="0 0 24 24" data-testid="CreditScoreOutlinedIcon">
+                            <path fill="#f24741"
+                                d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h5v-2H4v-6h18V6c0-1.11-.89-2-2-2zm0 4H4V6h16v2zm-5.07 11.17-2.83-2.83-1.41 1.41L14.93 22 22 14.93l-1.41-1.41-5.66 5.65z">
+                            </path>
+                        </svg>Lịch sử nạp</span><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv"
+                        focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+                        data-testid="KeyboardArrowRightOutlinedIcon">
+                        <path d="M8.59 16.59 13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"></path>
+                    </svg></a><a class="account__menu-item" href="/historyget"><span><svg
+                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-u2mbqi" focusable="false"
+                            aria-hidden="true" viewBox="0 0 24 24" data-testid="PaymentsOutlinedIcon">
+                            <path fill="#f24741"
+                                d="M19 14V6c0-1.1-.9-2-2-2H3c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zm-2 0H3V6h14v8zm-7-7c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3zm13 0v11c0 1.1-.9 2-2 2H4v-2h17V7h2z">
+                            </path>
+                        </svg>Lịch sử rút</span><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv"
+                        focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+                        data-testid="KeyboardArrowRightOutlinedIcon">
+                        <path d="M8.59 16.59 13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"></path>
+                    </svg></a><a class="account__menu-item" href="/addbank"><span><svg
+                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-u2mbqi" focusable="false"
+                            aria-hidden="true" viewBox="0 0 24 24" data-testid="AccountBalanceOutlinedIcon">
+                            <path fill="#f24741"
+                                d="M6.5 10h-2v7h2v-7zm6 0h-2v7h2v-7zm8.5 9H2v2h19v-2zm-2.5-9h-2v7h2v-7zm-7-6.74L16.71 6H6.29l5.21-2.74m0-2.26L2 6v2h19V6l-9.5-5z">
+                            </path>
+                        </svg>Liên kết ngân hàng</span><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv"
+                        focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+                        data-testid="KeyboardArrowRightOutlinedIcon">
+                        <path d="M8.59 16.59 13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"></path>
+                    </svg></a><a class="account__menu-item" href="/password"><span><svg
+                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-u2mbqi" focusable="false"
+                            aria-hidden="true" viewBox="0 0 24 24" data-testid="LockPersonOutlinedIcon">
+                            <path fill="#f24741"
+                                d="M6 20V10h12v1c.7 0 1.37.1 2 .29V10c0-1.1-.9-2-2-2h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h6.26c-.42-.6-.75-1.28-.97-2H6zM9 6c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9V6z">
+                            </path>
+                            <path fill="#f24741"
+                                d="M18 13c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zm0 2c.83 0 1.5.67 1.5 1.5S18.83 18 18 18s-1.5-.67-1.5-1.5.67-1.5 1.5-1.5zm0 6c-1.03 0-1.94-.52-2.48-1.32.73-.42 1.57-.68 2.48-.68s1.75.26 2.48.68c-.54.8-1.45 1.32-2.48 1.32z">
+                            </path>
+                        </svg>Đổi mật khẩu</span><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv"
+                        focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+                        data-testid="KeyboardArrowRightOutlinedIcon">
+                        <path d="M8.59 16.59 13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"></path>
+                    </svg></a>
+                <div class="account__menu-item"><span><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-u2mbqi"
+                            focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="LogoutOutlinedIcon">
+                            <path fill="#f24741"
+                                d="m17 8-1.41 1.41L17.17 11H9v2h8.17l-1.58 1.58L17 16l4-4-4-4zM5 5h7V3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h7v-2H5V5z">
+                            </path>
+                        </svg>Đăng xuất</span><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv"
+                        focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+                        data-testid="KeyboardArrowRightOutlinedIcon">
+                        <path d="M8.59 16.59 13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"></path>
+                    </svg></div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <div class="footer">
+        <div class="main-footer">
+            <div class="footer-item"><a href="/nofi.html" style="text-decoration: none;">
+                    <div class="icon_footer"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv"
+                            focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+                            data-testid="NotificationsNoneIcon">
+                            <path fill="#949494"
+                                d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.63-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.64 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2zm-2 1H8v-6c0-2.48 1.51-4.5 4-4.5s4 2.02 4 4.5v6z">
+                            </path>
+                        </svg></div>
+                    <div class="title_footer">Thông báo</div>
+                </a></div>
+            <div class="footer-item"><a href="/addmoney.html" style="text-decoration: none;">
+                    <div class="icon_footer"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv"
+                            focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+                            data-testid="AddBusinessOutlinedIcon">
+                            <path fill="#949494"
+                                d="M2 4h15v2H2zm13 13h2v-3h1v-2l-1-5H2l-1 5v2h1v6h9v-6h4v3zm-6 1H4v-4h5v4zm-5.96-6 .6-3h11.72l.6 3H3.04z">
+                            </path>
+                            <path fill="#949494" d="M23 18h-3v-3h-2v3h-3v2h3v3h2v-3h3z"></path>
+                        </svg></div>
+                    <div class="title_footer">Nạp tiền</div>
+                </a></div>
+            <div class="footer-item"><a href="/" style="text-decoration: none;">
+                    <div class="icon_footer active"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv"
+                            focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="HomeOutlinedIcon">
+                            <path fill="#fff"
+                                d="m12 5.69 5 4.5V18h-2v-6H9v6H7v-7.81l5-4.5M12 3 2 12h3v8h6v-6h2v6h6v-8h3L12 3z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="title_footer active">Trang chủ</div>
+                </a></div>
+            <div class="footer-item"><a href="/profile.html" style="text-decoration: none;">
+                    <div class="icon_footer"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv"
+                            focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+                            data-testid="AccountCircleOutlinedIcon">
+                            <path fill="#949494"
+                                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM7.35 18.5C8.66 17.56 10.26 17 12 17s3.34.56 4.65 1.5c-1.31.94-2.91 1.5-4.65 1.5s-3.34-.56-4.65-1.5zm10.79-1.38C16.45 15.8 14.32 15 12 15s-4.45.8-6.14 2.12C4.7 15.73 4 13.95 4 12c0-4.42 3.58-8 8-8s8 3.58 8 8c0 1.95-.7 3.73-1.86 5.12z">
+                            </path>
+                            <path fill="#949494"
+                                d="M12 6c-1.93 0-3.5 1.57-3.5 3.5S10.07 13 12 13s3.5-1.57 3.5-3.5S13.93 6 12 6zm0 5c-.83 0-1.5-.67-1.5-1.5S11.17 8 12 8s1.5.67 1.5 1.5S12.83 11 12 11z">
+                            </path>
+                        </svg></div>
+                    <div class="title_footer">Trang cá nhân</div>
+                </a></div>
+            <div class="footer-item"><a href="/cskh.html" style="text-decoration: none;">
+                    <div class="icon_footer"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv"
+                            focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+                            data-testid="HeadsetMicOutlinedIcon">
+                            <path fill="#949494"
+                                d="M19 14v4h-2v-4h2M7 14v4H6c-.55 0-1-.45-1-1v-3h2m5-13c-4.97 0-9 4.03-9 9v7c0 1.66 1.34 3 3 3h3v-8H5v-2c0-3.87 3.13-7 7-7s7 3.13 7 7v2h-4v8h4v1h-7v2h6c1.66 0 3-1.34 3-3V10c0-4.97-4.03-9-9-9z">
+                            </path>
+                        </svg></div>
+                    <div class="title_footer">CSKH</div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            loop: true,
+            spaceBetween: 10,
+        });
+    </script>
+
+</body>
+
+</html>
