@@ -1494,3 +1494,48 @@ p {
     padding: 5px 15px;
     text-shadow: 0 .05333rem .02667rem red;
 }
+
+
+/* =============================== LOGIN ============================ */
+.login-template{
+    padding-bottom: 0px;
+    margin-top: 0px;
+
+}
+.login-template .main{
+    margin-top: 0px;
+
+}
+.login {
+    background: linear-gradient(hsla(0, 0%, 100%, 0), #b16a6a), url(../img/login-bg.png);
+    display: flex;
+    min-height: 100vh;
+    padding: 20px;
+}
+.login form .input {
+    position: relative;
+}
+.login form.form-lg {
+    width: 100%;
+    text-align: center;
+    margin-top: 45%;
+}
+
+.login h1 {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0 0 .2rem;
+    text-transform: uppercase;
+}
+.login form svg {
+    color: #666;
+    font-size: 24px;
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    width: 20px;
+}
+.login .form-lg input, .login .form-lg select{
+    height: 50px;
+}
